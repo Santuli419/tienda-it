@@ -1,0 +1,386 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #0c2b40;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #0c2b40;
+  position: fixed;
+  width: 100%;
+  z-index: 3000;
+}
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+a{
+  color: white;
+  text-decoration: none;
+  transition: .4s all;
+}
+a:hover{
+ color: #0fb8ce;
+}
+.section-banner{
+  height: 600px;
+  justify-content:center;
+  display: flex;
+}
+.cont-banner-inicio{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-top: 100px;
+  .contenedor-text{
+    display: grid;
+    gap: 90px;
+    padding-left:50px;
+    .cont-titulo-logo{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+      }
+      h5{
+        font-size: 25px;
+        color: white;
+        width: 200px;
+      }
+    }
+    h1{
+      font-size: 54px;
+      color: #0fb8ce;
+      font-weight: bold;
+    }
+    .cont-button button{
+      font-size: 18px;
+      color: #0fb8ce;
+      border: 1px solid #0fb8ce;
+      padding: 7px;
+      overflow: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .contenedor-img img{
+    width: 500px;
+    height:450px;
+  }
+}
+main{
+  height: 570px;
+  background: linear-gradient(rgba(12, 43, 64, 0.6), rgba(12, 43, 64, 0.6)),
+  url(img/reparacin-it.jpg);
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .section-main{
+    background: transparent;
+    width: 650px;
+    display: grid;
+    gap: 30px;
+    .titulo-section-main{
+      color: #0fb8ce;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      font-size: 40px;
+
+    }
+    .text-descriptivo-section-main{
+      background: transparent;
+      color: white;
+
+    }
+  }
+}
+/* animaciones del banner principal y del texto de la section-main*/
+.animate__slideInLeft{
+  opacity: 1;
+  transform: translateY(0); /* Vuelve a su posición */
+  --animate-duration: 1.8s;
+}
+.algo{
+  opacity: 0;
+}
+.section{
+  height: 550px;
+  .cont-otros-servicios{
+    margin: 50px 0;
+    display: grid;
+    gap: 50px;
+    .titulo-servicios{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #0fb8ce;
+      font-size:36px;
+      font-weight: lighter;
+    }
+    .cont-cards-otros-servicios{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      .cards-servicios{
+        width: 370px;
+        height: 240px;
+        display: grid;
+        gap: 20px;
+        img{
+          width: 100%;
+          height: 300px;
+        }
+        /* Estilos descripcion cards de servicios*/
+        .descripcion-cards-servicios{
+          display: grid;
+          place-items: center;
+          gap: 20px;
+          .titulo-descripcion-cards{  
+            color: #0fb8ce;
+            font-size: 25px;
+          }
+          
+       
+          .parrafo-cards-servicios{
+              font-size: 17px;
+              color: white;
+              padding:10px 30px;
+              text-align: center;
+              font-size: 17px;
+          }
+          
+        }
+       
+      }
+    }
+  }
+
+}
+.section-quehacemos{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #253947;/*#253947*/
+  height: 600px;
+  gap:40px;
+ .cont-titulo-que-hacemos{
+    background-color: #253947;/*#253947*/
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    .titulo-quehacemos{
+      background-color: transparent;
+      color: #0fb8ce;
+      font-size: 30px;
+    }
+ }
+ .cont-cajas-que-hacemos{
+  background-color: #253947;/*#253947*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  .caja-que-hacemos{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 380px;
+    border-radius: 50px;
+    border: 1px solid #0fb8ce;
+    background-color: transparent;
+    img{
+      width: 100px;
+      height: 100px;
+      background-color: transparent;
+      margin: auto;
+    }
+    .text-quehacemos{
+      text-align: center;
+      background-color: transparent;
+      color: #0fb8ce;
+      font-size: 25px;
+      padding: 0 25px;
+    }
+    .text-descripcion{
+      text-align: center;
+      background-color: transparent;
+      padding: 0 25px;
+      color: white;
+    }
+  }
+ }
+}
+.section-parrafo{
+  height: 570px;
+  background: linear-gradient(rgba(12, 43, 64, 0.6), rgba(12, 43, 64, 0.6)),
+  url(img/reparacin-it.jpg);
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contenedor-section-parrafo{
+
+    background-color: transparent;
+    .text-section-parrafo{
+      text-align: center;
+      background-color: transparent;
+      width: 650px;
+      font-size: 35px;
+      color: #0fb8ce;
+      font-weight: lighter;
+    }
+  }
+}
+.section-comentarios-clientes{
+  height: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #253947;
+  .cont-comentarios-clientes{
+    display: grid;
+    gap: 60px;
+    background-color: #253947;
+    .cont-titulo-comentarios-clientes{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #0fb8ce;
+      font-size: 30px;
+      background-color: transparent;
+      h3{
+        font-weight: lighter;
+        background-color: #253947;
+      }
+    }
+    
+  }
+  .cont-cards-comentarios-clientes{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    background-color: transparent;
+    .cards-comentario-del-cliente{
+      background-color: transparent;
+      width: 300px;
+      height:auto;
+      display: grid;
+      gap: 10px;
+      padding: 10px;
+      .cont-img-comentario{
+        background-color: #253947;
+        display: flex;
+        gap: 10px;
+        width: 280px;
+        img{
+          width: 70px;
+          height: 70px;
+        }
+        .text-span-comentario{
+          color: #0fb8ce;
+          background-color: #253947;
+          
+        }
+      }
+      .comentario {
+        background-color: transparent;
+        max-width: 280px;
+        overflow: hidden;
+        p{
+          background-color: transparent;
+          width: 280px;
+          height: 100px;
+          color: white;
+        }
+      }
+    }      
+    
+  } 
+}
+footer{
+  height:auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .cont-main-footer{
+    padding: 0 20px 20px 50px;
+    display: grid;
+    gap: 30px;
+    .titulo-footer{
+      display: grid;
+      gap: 10px;
+      h2{
+        color: #0fb8ce;
+        font-weight: lighter;
+        font-size: 40px;
+      }
+      p{
+        color: white;
+        font-size: 20px;
+      }
+      .btn-footer{
+        color: #0fb8ce;
+        border: 1px solid #0fb8ce;
+        border-radius: 15px;
+        padding: 8px 22px;
+        cursor: pointer;
+      }
+    }
+    .cont-contactos{
+      display: grid;
+      gap: 30px;
+      .info-contacto{
+        display: grid;
+        gap: 15px;
+        .titulo-contacto{
+          color: #0fb8ce;
+          font-weight: lighter;
+          font-size: 20px;
+        }
+        p{
+          color: white;
+        }
+      }
+      .cont-redes{
+        display: flex;
+        gap: 10px;
+        .redes-sociales{
+          color: #0fb8ce;
+        }
+      }
+    }
+  
+  }
+  .cont-img-footer{
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image:url(img/it-consult.jpg) ;
+    width:600px;
+    height:450px;
+  }
+
+}
